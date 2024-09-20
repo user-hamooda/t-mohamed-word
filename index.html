@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>mohamed</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        user-select: none;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* ___---___ */
+      main {
+        padding: 3rem;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+
+      .container h1 {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        color: #ff0000;
+      }
+
+      .table-responsive {
+        overflow-x: auto;
+        margin-top: 3rem;
+      }
+
+      .table-responsive h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      table {
+        width: 100%;
+        border-spacing: 0;
+        color: #000;
+        background-color: #eee;
+      }
+
+      table thead tr {
+        background-color: #ccc;
+      }
+
+      table thead tr th {
+        min-width: 100px;
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid;
+        border-left: 1px solid;
+      }
+
+      table thead tr th:last-child {
+        border-right: 1px solid;
+      }
+
+      table tbody tr {
+        transition: 0.3s;
+      }
+
+      table tbody tr:focus,
+      table tbody tr:hover {
+        background-color: #aaa;
+      }
+
+      table tbody tr td {
+        min-width: 100px;
+        text-align: start;
+        padding: 10px;
+        border-top: 1px solid;
+      }
+
+      table tbody tr td span {
+        color: #ff0000;
+      }
+
+      table tbody tr td:last-child {
+        text-align: end;
+      }
+
+      table tbody tr td:not(:first-child) {
+        border-left: 1px solid;
+      }
+
+      table tbody tr td:first-child {
+        border-left: 1px solid;
+      }
+
+      table tbody tr td:last-child {
+        border-right: 1px solid;
+      }
+
+      table tbody tr:last-child td {
+        border-bottom: 1px solid;
+      }
+
+      footer {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid;
+        margin-top: 20px;
+      }
+
+      footer .tel,
+      footer .name {
+        width: 50%;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      /* ___---___ */
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+        }
+      }
+
+      @media (max-width: 430px) {
+        main {
+          padding: 0.5rem;
+        }
+
+        .container {
+          width: 95%;
+        }
+
+        .container h1 {
+          width: 75%;
+        }
+
+        .table-responsive {
+          margin-top: 1.5rem;
+        }
+
+        footer {
+          flex-direction: column;
+          gap: 5px;
+          padding: 0.5rem;
+        }
+
+        footer .tel,
+        footer .name {
+          width: 100%;
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 320px) {
+        main {
+          padding: 0;
+        }
+        .container h1 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <h1>English Language Words</h1>
+
+        <div id="units" class="table-responsive">
+          <!-- <h2>words</h2> -->
+          <table>
+            <thead>
+              <tr>
+                <th>الكلمة</th>
+                <th>المعنى الانجليزي</th>
+                <th>المعنى العربي</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>optional</td>
+                <td>not <span>compulsory</span></td>
+                <td>اختياري</td>
+              </tr>
+
+              <tr>
+                <td>set</td>
+                <td>a complete <span>group</span></td>
+                <td>مجموعة</td>
+              </tr>
+
+              <tr>
+                <td>confindent</td>
+                <td>being <span>certain - sure</span></td>
+                <td>واثق</td>
+              </tr>
+
+              <tr>
+                <td>creative</td>
+                <td>
+                  <span>good at</span> creting (making) new and unusual things
+                </td>
+                <td>مبدع</td>
+              </tr>
+
+              <tr>
+                <td>optional</td>
+                <td>not <span>compulsory</span></td>
+                <td>اختياري</td>
+              </tr>
+
+              <tr>
+                <td>set</td>
+                <td>a complete <span>group</span></td>
+                <td>مجموعة</td>
+              </tr>
+
+              <tr>
+                <td>confindent</td>
+                <td>being <span>certain - sure</span></td>
+                <td>واثق</td>
+              </tr>
+
+              <tr>
+                <td>creative</td>
+                <td>
+                  <span>good at</span> creting (making) new and unusual things
+                </td>
+                <td>مبدع</td>
+              </tr>
+
+              <tr>
+                <td>excuse</td>
+                <td><span>a false / untrue</span> reason</td>
+                <td>عذر</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <footer>
+        <div class="name">t-mohamed al-amoudi</div>
+
+        <div class="tel">+970 598 393 942</div>
+      </footer>
+    </div>
+  </body>
+</html>
