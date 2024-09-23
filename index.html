@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>mohamed</title>
+    <title>words</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -113,6 +113,22 @@
         border-bottom: 1px solid;
       }
 
+      .print1 {
+        display: none;
+        width: fit-content;
+        position: absolute;
+        text-align: center;
+        font-size: 80px;
+        font-weight: 100;
+        transform: rotate(-90deg);
+        letter-spacing: 5px;
+      }
+      
+      .print1 {
+        top: 415px;
+        right: -60px;
+      }
+
       footer {
         width: 100%;
         padding: 1rem;
@@ -175,6 +191,13 @@
           width: 100%;
         }
       }
+
+      @media print {
+        .print1,
+        .print2 {
+          display: block;
+        }
+      }
     </style>
   </head>
 
@@ -196,7 +219,9 @@
             <tbody>
               <tr>
                 <td>optional</td>
-                <td>not <span>compulsory</span></td>
+                <td>
+                  not <span>compulsory</span>
+                </td>
                 <td>اختياري</td>
               </tr>
 
@@ -254,6 +279,10 @@
             </tbody>
           </table>
         </div>
+      </div>
+
+      <div class="print1">
+        <span>أ-محمد العامودي</span>
       </div>
     </main>
     <div class="container">
